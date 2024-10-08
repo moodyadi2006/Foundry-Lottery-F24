@@ -1,0 +1,3 @@
+//If you have a .env file with sepolia rpc url then it will automatically call all variables here
+
+// This tells our makefile that these are the targets we are just going to use 

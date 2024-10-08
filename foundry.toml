@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["libs"]
+remappings = [
+  '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts',
+  '@solmate=libs/solmate/src/',
+]
+fs_permissions = [  
+  { access = "read", path = "./broadcast" }, 
+  { access = "read", path = "./reports" },
+]
+[fuzz]
+runs=256
+
+[dependencies]
+forge-std = "0.2.0"
